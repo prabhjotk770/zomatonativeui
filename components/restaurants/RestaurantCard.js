@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, ImageBackground, TouchableOpacity } from 'react-native';
 
-import { Container, Header, Content, Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right } from 'native-base';
+import { Content, Card, CardItem, Left, Right } from 'native-base';
 
 import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
@@ -17,35 +17,33 @@ const RestaurantCard = ({ image, name, desc, rating, amount, time }) => {
 								<Feather name="bookmark" size={20} color="black" />
 							</CardItem>
 							<CardItem style={styles.duration}>
-								<Text style={{ fontSize: '13' }}>{time}mins</Text>
+								<Text style={{ fontSize: 13 }}>{time}mins</Text>
 							</CardItem>
 						</ImageBackground>
 					</CardItem>
 				</TouchableOpacity>
 
-				<Card>
-					<CardItem>
-						<Left>
-							<Text style={{ fontWeight: '400', fontSize: '20' }}>{name}</Text>
-						</Left>
+				<CardItem>
+					<Left>
+						<Text style={{ fontWeight: '400', fontSize: 20 }}>{name}</Text>
+					</Left>
 
-						<Right>
-							<Entypo name="star" size={15} color="red">
-								<Text style={{ color: 'black', fontSize: '13', fontWeight: '500' }}>{rating}</Text>
-								<Text style={{ color: '#6e6a6a', fontSize: '13', fontWeight: '500' }}>/5</Text>
-							</Entypo>
-						</Right>
-					</CardItem>
-					<CardItem>
-						<Left>
-							<Text style={{ color: '#6e6a6a', fontSize: '13' }}>{desc}</Text>
-						</Left>
+					<Right>
+						<Entypo name="star" size={15} color="red">
+							<Text style={{ color: 'black', fontSize: 13, fontWeight: '500' }}>{rating}</Text>
+							<Text style={{ color: '#6e6a6a', fontSize: 13, fontWeight: '500' }}>/5</Text>
+						</Entypo>
+					</Right>
+				</CardItem>
+				<CardItem>
+					<Left>
+						<Text style={{ color: '#6e6a6a', fontSize: 13 }}>{desc}</Text>
+					</Left>
 
-						<Right>
-							<Text style={{ color: '#858181', fontWeight: '600' }}>Rs.{amount}</Text>
-						</Right>
-					</CardItem>
-				</Card>
+					<Right>
+						<Text style={{ color: '#858181', fontWeight: '600' }}>Rs.{amount}</Text>
+					</Right>
+				</CardItem>
 			</Card>
 		</Content>
 	);

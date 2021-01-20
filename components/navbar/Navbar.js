@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'native-base';
+import { StyleSheet } from 'react-native';
+import { Footer, FooterTab, Button, Icon } from 'native-base';
 
 const Navbar = () => {
 	return (

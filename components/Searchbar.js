@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Container, Header, Content, Item, Input, Icon } from 'native-base';
-class Searchbar extends Component {
-	render() {
-		return (
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { Content, Item, Input, Icon, Header } from 'native-base';
+const Searchbar = () => {
+	return (
+		<Header>
 			<Content style={styles.searchbar}>
 				<Item rounded>
 					<Icon name="search" style={{ color: 'red' }} />
 					<Input placeholder="Restaurant name, cuisine, or a dish..." />
 				</Item>
 			</Content>
-		);
-	}
-}
+		</Header>
+	);
+};
+
 const styles = StyleSheet.create({
-	searchbar: {},
+	searchbar: { flex: 1 },
 });
 
 export default Searchbar;

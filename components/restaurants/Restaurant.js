@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
-import { Col, Row, Grid } from 'react-native-easy-grid';
-import { Container, Header, Content, Card, CardItem, Body } from 'native-base';
+import { StyleSheet, View, Text } from 'react-native';
+
+import { Content } from 'native-base';
 import RestaurantCard from './RestaurantCard';
 
 const Restaurant = () => {
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		marginLeft: 10,
 		marginBottom: 10,
+		marginTop: 10,
 	},
 });
 export default Restaurant;

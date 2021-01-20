@@ -1,8 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, ImageBackground, TouchableOpacity } from 'react-native';
-import { Col, Row, Grid } from 'react-native-easy-grid';
-import { Container, Header, Content, Card, CardItem, Body } from 'native-base';
-import LinearGradient from 'react-native-linear-gradient';
+import { StyleSheet, Text, ImageBackground, TouchableOpacity } from 'react-native';
+
+import { Content, CardItem } from 'native-base';
 
 const FoodType = ({ image, title }) => {
 	return (
@@ -19,7 +18,7 @@ const FoodType = ({ image, title }) => {
 };
 const styles = StyleSheet.create({
 	content: {
-		padding: 5,
+		padding: 6,
 	},
 	image: {
 		width: '100%',

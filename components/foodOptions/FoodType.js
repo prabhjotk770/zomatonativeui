@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
-import { Container, Header, Content, Card, CardItem, Body } from 'native-base';
+import { Content } from 'native-base';
 import FoodTypeCard from './FoodTypeCard';
 
 const FoodType = () => {
@@ -26,7 +26,7 @@ const FoodType = () => {
 						<FoodTypeCard
 							image={{
 								uri:
-									'https://c4.wallpaperflare.com/wallpaper/1017/647/742/food-pizza-cheese-tomatoes-olives-hd-wallpaper-preview.jpg',
+									'https://www.itl.cat/pngfile/big/6-69323_birthday-cake-wallpaper-with-name-birthday-chocolate-cake.jpg',
 							}}
 							title="Cake"
 						/>
